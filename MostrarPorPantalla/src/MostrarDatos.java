@@ -11,6 +11,7 @@
 public class MostrarDatos {
     public static void main(String args[])
     {
-        System.out.println("Hola Mundo");
+        System.out.print(" Hola, tu edad es:");
+        System.out.print(" \t\t\n\n23");
     }
 }
