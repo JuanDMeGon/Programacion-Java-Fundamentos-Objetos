@@ -21,16 +21,20 @@ public class Avion {
         this.identificador = identificador;
     }
     
-    boolean despegar()
+    boolean despegar(int costoCombustible, double alturaMinima)
     {
-        this.cantCombustible = this.cantCombustible - 10;
-        this.alturaDeVuelo = this.alturaDeVuelo + 10000;
+        this.cantCombustible = this.cantCombustible - costoCombustible;
+        this.alturaDeVuelo = this.alturaDeVuelo + alturaMinima;
         
         return this.cantCombustible > 0;
     }
     
     public static void main(String[] args) {
         Avion avion1 = new Avion(35000, 50000, 0, "i15f52gr");
+        
+        boolean despegue = avion1.despegar(50000, 15000);
+        
+        System.out.println(despegue);        
     }
     
     
