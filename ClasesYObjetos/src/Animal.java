@@ -13,11 +13,11 @@ public class Animal {
     float peso;
     String raza;
     
-    Animal(String nombreDelAnimal, float pesoDelAnimal, String razaDelAnimal)
+    Animal(String nombre, float peso, String raza)
     {
-        nombre = nombreDelAnimal;
-        peso = pesoDelAnimal + 10;
-        raza = razaDelAnimal;
+        this.nombre = nombre;
+        this.peso = peso + 10;
+        this.raza = raza;
     }
     
     public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class Animal {
         
         Animal animal2 = new Animal("Pepe", 2, "bulldog");
         
-        System.out.println(animal1.peso);
-        System.out.println(animal2.peso);
+        System.out.println(animal1.nombre);
+        System.out.println(animal2.nombre);
     }
 }
