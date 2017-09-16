@@ -21,6 +21,16 @@ public class Avion {
         this.identificador = identificador;
     }
     
+    double getPeso()
+    {
+        return peso;
+    }
+    
+    String getIdentificador()
+    {
+        return identificador;
+    }
+    
     boolean despegar(int costoCombustible, double alturaMinima)
     {
         this.cantCombustible = this.cantCombustible - costoCombustible;
