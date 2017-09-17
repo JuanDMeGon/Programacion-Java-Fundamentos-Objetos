@@ -6,6 +6,8 @@
 
 package aeronautica.aviones;
 
+import aeronautica.pilotos.Piloto;
+
 /**
  *
  * @author JuanDMeGon
@@ -14,7 +16,8 @@ public class Avion {
     double peso;
     int cantCombustible;
     double alturaDeVuelo;
-    String identificador;      
+    String identificador;   
+    Piloto piloto;
 
     public Avion(double peso, int cantCombustible, double alturaDeVuelo, String identificador)
     {
