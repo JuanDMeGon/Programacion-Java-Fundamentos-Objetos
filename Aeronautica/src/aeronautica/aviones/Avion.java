@@ -75,10 +75,16 @@ public class Avion {
         return this.cantCombustible > 0;
     }
     
-    void atterizar(double pesoABordo)
+    void aterrizar(double pesoABordo)
     {
         this.alturaDeVuelo = 0;
         this.peso = this.peso - pesoABordo;        
+    }
+    
+    void aterrizar(double pesoEquipaje, double pesoPasajeros)
+    {
+        this.alturaDeVuelo = 0;
+        this.peso = this.peso - pesoEquipaje - pesoPasajeros; 
     }
     
     public static void main(String[] args) {
@@ -89,7 +95,7 @@ public class Avion {
         
         if(despegue)
         {
-            avion1.atterizar(10000);
+            avion1.aterrizar(10000);
         }
     }
 }
