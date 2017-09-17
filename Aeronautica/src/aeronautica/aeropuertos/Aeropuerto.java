@@ -5,10 +5,12 @@
  */
 package aeronautica.aeropuertos;
 
+import aeronautica.aviones.Avion;
+
 /**
  *
  * @author JuanDMeGon
  */
 public class Aeropuerto {
-    
+    Avion[] aviones;
 }
