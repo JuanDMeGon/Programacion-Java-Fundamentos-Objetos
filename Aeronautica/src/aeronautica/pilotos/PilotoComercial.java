@@ -28,7 +28,7 @@ public class PilotoComercial extends Piloto {
     
     String saludarPasajeros()
     {
-        return this.comunicarse("Bienvenidos pasajeros");
+        return super.comunicarse("Bienvenidos pasajeros");
     }
     
     String despedirPasajeros()
