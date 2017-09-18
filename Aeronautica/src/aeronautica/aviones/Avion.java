@@ -90,6 +90,8 @@ public class Avion {
     public static void main(String[] args) {
         Avion avion1 = new Avion(35000, 50000, 0, "i15f52gr");
         
+        System.out.println(avion1.toString());
+        
         boolean despegue = avion1.despegar(50000, 15000);
         System.out.println(despegue);
         
