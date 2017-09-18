@@ -16,8 +16,14 @@ public class PilotoComercial extends Piloto {
         
         p.nombre = "Juan";
         
-        System.out.println(p.nombre);
-        System.out.println(p.edad);
+        System.out.println(p.saludarPasajeros());
+    }
+    
+    String comunicarse(String mensaje)
+    {
+        System.out.println(this.identificacion + mensaje);
+        
+        return this.nombre + mensaje;
     }
     
     String saludarPasajeros()
