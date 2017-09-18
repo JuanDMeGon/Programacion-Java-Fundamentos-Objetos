@@ -17,4 +17,9 @@ public class PilotoDeCarga extends Piloto {
         System.out.println(p.nombre);
         System.out.println(p.edad);
     }
+    
+    String saludarTripulacion()
+    {
+        return this.comunicarse("Gracias por estar a bordo");
+    }
 }

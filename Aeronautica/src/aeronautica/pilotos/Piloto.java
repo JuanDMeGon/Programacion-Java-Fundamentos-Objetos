@@ -13,4 +13,11 @@ public class Piloto {
     String nombre;
     int edad;
     String identificacion;
+    
+    String comunicarse(String mensaje)
+    {
+        System.out.println(mensaje);
+        
+        return mensaje;
+    }
 }

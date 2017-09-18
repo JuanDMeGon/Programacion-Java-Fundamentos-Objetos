@@ -19,4 +19,14 @@ public class PilotoComercial extends Piloto {
         System.out.println(p.nombre);
         System.out.println(p.edad);
     }
+    
+    String saludarPasajeros()
+    {
+        return this.comunicarse("Bienvenidos pasajeros");
+    }
+    
+    String despedirPasajeros()
+    {
+        return this.comunicarse("gracias por usar nuestra aerolínea");
+    }
 }
