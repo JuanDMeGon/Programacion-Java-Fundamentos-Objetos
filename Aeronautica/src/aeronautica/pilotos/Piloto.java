@@ -10,5 +10,7 @@ package aeronautica.pilotos;
  * @author JuanDMeGon
  */
 public class Piloto {
-    
+    String nombre;
+    int edad;
+    String identificacion;
 }

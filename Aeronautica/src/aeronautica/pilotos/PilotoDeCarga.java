@@ -9,12 +9,10 @@ package aeronautica.pilotos;
  *
  * @author JuanDMeGon
  */
-public class PilotoComercial extends Piloto {
+public class PilotoDeCarga extends Piloto {
     
     public static void main(String[] args) {
-        PilotoComercial p = new PilotoComercial();
-        
-        p.nombre = "Juan";
+        PilotoDeCarga p = new PilotoDeCarga();
         
         System.out.println(p.nombre);
         System.out.println(p.edad);
