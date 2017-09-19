@@ -16,7 +16,7 @@ public class Avion {
     double peso;
     int cantCombustible;
     double alturaDeVuelo;
-    String identificador;   
+    final String identificador;   
     Piloto piloto;
 
     public Avion(double peso, int cantCombustible, double alturaDeVuelo, String identificador)
@@ -50,11 +50,6 @@ public class Avion {
     void setPeso(double peso)
     {
         this.peso = peso;        
-    }
-    
-    void setIdentificador(String identificador)
-    {
-        this.identificador = identificador;        
     }
 
     public void setCantCombustible(int cantCombustible)
