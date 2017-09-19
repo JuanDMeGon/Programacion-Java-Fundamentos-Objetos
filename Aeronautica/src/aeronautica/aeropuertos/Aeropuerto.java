@@ -12,7 +12,7 @@ import aeronautica.aviones.Avion;
  * @author JuanDMeGon
  */
 public class Aeropuerto {
-    Avion[] aviones;
+    static Avion[] aviones;
     static int cantAviones;
     
     Aeropuerto(Avion[] aviones)
@@ -43,16 +43,20 @@ public class Aeropuerto {
         cantAviones = 0;
     }
     
-    final Avion[] agregarAvion(Avion avion)
+    static final Avion[] agregarAvion(Avion avion)
     {
-        return this.aviones;
+        aviones[cantAviones] = avion;
+        cantAviones++;
+        return aviones;
     }
     
     public static void main(String[] args) {
         Avion avion1 = new Avion(35000, 50000, 0, "i15f52gr");
         Aeropuerto b = new Aeropuerto(avion1, 10);
         
-        Aeropuerto a = new Aeropuerto(10);
+        b.agregarAvion(avion1);
+        agregarAvion(avion1);
+        Aeropuerto.agregarAvion(avion1);
         
         System.out.println(cantAviones);
         
