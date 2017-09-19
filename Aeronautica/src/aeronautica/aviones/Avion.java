@@ -88,11 +88,14 @@ public class Avion {
     }
     
     public static void main(String[] args) {
-        Avion avion1 = new Avion(35000, 50000, 0, "i15f52gr");
+        
+        final int ALTURA_MAXIMA = 10000;        
+        
+        final Avion avion1 = new Avion(35000, 50000, 0, "i15f52gr");
         
         System.out.println(avion1.toString());
         
-        boolean despegue = avion1.despegar(50000, 15000);
+        boolean despegue = avion1.despegar(50000, ALTURA_MAXIMA);
         System.out.println(despegue);
         
         if(despegue)
