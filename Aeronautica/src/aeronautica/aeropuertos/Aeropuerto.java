@@ -37,4 +37,9 @@ public class Aeropuerto {
     {
         this.aviones = new Avion[cantidad];
     }
+    
+    final Avion[] agregarAvion(Avion avion)
+    {
+        return this.aviones;
+    }
 }
