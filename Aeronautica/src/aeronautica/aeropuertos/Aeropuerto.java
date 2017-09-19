@@ -15,13 +15,13 @@ public class Aeropuerto {
     static Avion[] aviones;
     static int cantAviones;
     
-    Aeropuerto(Avion[] aviones)
+    public Aeropuerto(Avion[] aviones)
     {
         this.aviones = aviones;
         cantAviones = aviones.length;
     }
     
-    Aeropuerto(Avion avion)
+    public Aeropuerto(Avion avion)
     {
         this.aviones = new Avion[50];
         
@@ -29,7 +29,7 @@ public class Aeropuerto {
         cantAviones = 1;
     }
     
-    Aeropuerto(Avion avion, int cantidad)
+    public Aeropuerto(Avion avion, int cantidad)
     {
         this.aviones = new Avion[cantidad];
         
@@ -37,13 +37,13 @@ public class Aeropuerto {
         cantAviones = 1;
     }
     
-    Aeropuerto(int cantidad)
+    public Aeropuerto(int cantidad)
     {
         this.aviones = new Avion[cantidad];
         cantAviones = 0;
     }
     
-    static final Avion[] agregarAvion(Avion avion)
+    public static final Avion[] agregarAvion(Avion avion)
     {
         aviones[cantAviones] = avion;
         cantAviones++;

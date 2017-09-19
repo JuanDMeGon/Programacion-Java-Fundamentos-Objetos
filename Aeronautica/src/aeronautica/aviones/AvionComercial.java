@@ -5,6 +5,8 @@
  */
 package aeronautica.aviones;
 
+import aeronautica.aeropuertos.AeropuertoInternacional;
+
 /**
  *
  * @author JuanDMeGon
@@ -15,5 +17,9 @@ public class AvionComercial extends Avion {
         super(peso, cantCombustible, alturaDeVuelo, identificador);
         
         System.out.println("Creando...");        
+    }
+    
+    public static void main(String[] args) {
+        AeropuertoInternacional a = new AeropuertoInternacional(5);
     }
 }

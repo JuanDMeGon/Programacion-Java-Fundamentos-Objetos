@@ -13,22 +13,22 @@ import aeronautica.aviones.Avion;
  */
 public class AeropuertoLocal extends Aeropuerto {
     
-    AeropuertoLocal(Avion[] aviones)
+    public AeropuertoLocal(Avion[] aviones)
     {
         super(aviones);
     }
     
-    AeropuertoLocal(Avion avion)
+    public AeropuertoLocal(Avion avion)
     {
         super(avion);
     }
     
-    AeropuertoLocal(Avion avion, int cantidad)
+    public AeropuertoLocal(Avion avion, int cantidad)
     {
         super(avion, cantidad);
     }
     
-    AeropuertoLocal(int cantidad)
+    public AeropuertoLocal(int cantidad)
     {
         super(cantidad);
     }
