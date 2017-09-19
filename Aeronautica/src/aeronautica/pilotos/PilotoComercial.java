@@ -19,13 +19,6 @@ public class PilotoComercial extends Piloto {
         System.out.println(p.saludarPasajeros());
     }
     
-    String comunicarse(String mensaje)
-    {
-        System.out.println(this.identificacion + mensaje);
-        
-        return this.nombre + mensaje;
-    }
-    
     String saludarPasajeros()
     {
         return super.comunicarse("Bienvenidos pasajeros");
