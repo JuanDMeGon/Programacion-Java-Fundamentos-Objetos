@@ -14,8 +14,8 @@ public class PilotoDeCarga extends Piloto {
     public static void main(String[] args) {
         PilotoDeCarga p = new PilotoDeCarga();
         
-        System.out.println(p.nombre);
-        System.out.println(p.edad);
+        System.out.println(p.getNombre());
+        System.out.println(p.getEdad());
     }
     
     String saludarTripulacion()

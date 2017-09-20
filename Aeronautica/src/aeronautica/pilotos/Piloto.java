@@ -10,14 +10,29 @@ package aeronautica.pilotos;
  * @author JuanDMeGon
  */
 public class Piloto {
-    String nombre;
-    int edad;
-    String identificacion;
+    private String nombre;
+    private int edad;
+    private String identificacion;
     
     final String comunicarse(String mensaje)
     {
         System.out.println("padre" + mensaje);
         
         return mensaje;
+    }
+    
+    public void setNombre(String nombre)
+    {
+        this.nombre = nombre;
+    }
+    
+    public String getNombre()
+    {
+        return this.nombre;
+    }
+    
+    public int getEdad()
+    {
+        return this.edad;
     }
 }

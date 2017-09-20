@@ -13,11 +13,11 @@ import aeronautica.pilotos.Piloto;
  * @author JuanDMeGon
  */
 public class Avion {
-    double peso;
-    int cantCombustible;
-    double alturaDeVuelo;
-    final String identificador;   
-    Piloto piloto;
+    private double peso;
+    private int cantCombustible;
+    private double alturaDeVuelo;
+    private final String identificador;   
+    private Piloto piloto;
 
     public Avion(double peso, int cantCombustible, double alturaDeVuelo, String identificador)
     {

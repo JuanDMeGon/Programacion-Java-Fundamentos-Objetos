@@ -12,8 +12,8 @@ import aeronautica.aviones.Avion;
  * @author JuanDMeGon
  */
 public class Aeropuerto {
-    static Avion[] aviones;
-    static int cantAviones;
+    private static Avion[] aviones;
+    private static int cantAviones;
     
     public Aeropuerto(Avion[] aviones)
     {

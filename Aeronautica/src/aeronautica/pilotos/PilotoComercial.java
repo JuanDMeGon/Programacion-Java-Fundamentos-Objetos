@@ -14,7 +14,7 @@ public class PilotoComercial extends Piloto {
     public static void main(String[] args) {
         PilotoComercial p = new PilotoComercial();
         
-        p.nombre = "Juan";
+        p.setNombre("Juan");
         
         System.out.println(p.saludarPasajeros());
     }
