@@ -10,7 +10,7 @@ package aeronautica.pilotos;
  * @author JuanDMeGon
  */
 public final class PilotoMilitar extends Piloto{
-    String ordenarSalida()
+    public String ordenarSalida()
     {
         return this.comunicarse("Lanzarse del avión");
     }

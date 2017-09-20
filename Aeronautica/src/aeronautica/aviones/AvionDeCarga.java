@@ -10,7 +10,9 @@ package aeronautica.aviones;
  * @author JuanDMeGon
  */
 public class AvionDeCarga extends Avion {
-    double capacidadDeCarga;
+    
+    private double capacidadDeCarga;
+    
     public AvionDeCarga(double peso, int cantCombustible, double alturaDeVuelo, String identificador)
     {
         super(peso, cantCombustible, alturaDeVuelo, identificador);   

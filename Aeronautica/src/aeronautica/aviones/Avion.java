@@ -7,13 +7,12 @@
 package aeronautica.aviones;
 
 import aeronautica.pilotos.Piloto;
-import aeronautica.pilotos.PilotoDeCarga;
 
 /**
  *
  * @author JuanDMeGon
  */
-public class Avion extends PilotoDeCarga {
+public class Avion {
     private double peso;
     private int cantCombustible;
     private double alturaDeVuelo;
@@ -28,12 +27,12 @@ public class Avion extends PilotoDeCarga {
         this.identificador = identificador;
     }
     
-    double getPeso()
+    public double getPeso()
     {
         return peso;
     }
     
-    String getIdentificador()
+    public String getIdentificador()
     {
         return identificador;
     }
@@ -48,7 +47,7 @@ public class Avion extends PilotoDeCarga {
         return alturaDeVuelo;
     }
     
-    void setPeso(double peso)
+    public void setPeso(double peso)
     {
         this.peso = peso;        
     }
@@ -63,7 +62,7 @@ public class Avion extends PilotoDeCarga {
         this.alturaDeVuelo = alturaDeVuelo;
     }
     
-    boolean despegar(int costoCombustible, double alturaMinima)
+    public boolean despegar(int costoCombustible, double alturaMinima)
     {
         this.cantCombustible = this.cantCombustible - costoCombustible;
         this.alturaDeVuelo = this.alturaDeVuelo + alturaMinima;
@@ -71,13 +70,13 @@ public class Avion extends PilotoDeCarga {
         return this.cantCombustible > 0;
     }
     
-    void aterrizar(double pesoABordo)
+    public void aterrizar(double pesoABordo)
     {
         this.alturaDeVuelo = 0;
         this.peso = this.peso - pesoABordo;        
     }
     
-    void aterrizar(double pesoEquipaje, double pesoPasajeros)
+    public void aterrizar(double pesoEquipaje, double pesoPasajeros)
     {
         this.alturaDeVuelo = 0;
         this.peso = this.peso - pesoEquipaje - pesoPasajeros; 
@@ -93,8 +92,6 @@ public class Avion extends PilotoDeCarga {
         
         boolean despegue = avion1.despegar(50000, ALTURA_MAXIMA);
         System.out.println(despegue);
-        
-        avion1.saludarTripulacion();
         
         if(despegue)
         {

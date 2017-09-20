@@ -19,12 +19,12 @@ public class PilotoComercial extends Piloto {
         System.out.println(p.saludarPasajeros());
     }
     
-    String saludarPasajeros()
+    public String saludarPasajeros()
     {
         return super.comunicarse("Bienvenidos pasajeros");
     }
     
-    String despedirPasajeros()
+    public String despedirPasajeros()
     {
         return this.comunicarse("gracias por usar nuestra aerolínea");
     }

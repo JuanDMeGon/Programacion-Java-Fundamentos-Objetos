@@ -14,7 +14,7 @@ public class Piloto {
     private int edad;
     private String identificacion;
     
-    final String comunicarse(String mensaje)
+    public final String comunicarse(String mensaje)
     {
         System.out.println("padre" + mensaje);
         
