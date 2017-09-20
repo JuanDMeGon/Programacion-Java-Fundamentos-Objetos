@@ -18,7 +18,7 @@ public class PilotoDeCarga extends Piloto {
         System.out.println(p.getEdad());
     }
     
-    String saludarTripulacion()
+    protected String saludarTripulacion()
     {
         return this.comunicarse("Gracias por estar a bordo");
     }

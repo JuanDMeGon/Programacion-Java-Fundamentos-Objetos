@@ -7,12 +7,13 @@
 package aeronautica.aviones;
 
 import aeronautica.pilotos.Piloto;
+import aeronautica.pilotos.PilotoDeCarga;
 
 /**
  *
  * @author JuanDMeGon
  */
-public class Avion {
+public class Avion extends PilotoDeCarga {
     private double peso;
     private int cantCombustible;
     private double alturaDeVuelo;
@@ -92,6 +93,8 @@ public class Avion {
         
         boolean despegue = avion1.despegar(50000, ALTURA_MAXIMA);
         System.out.println(despegue);
+        
+        avion1.saludarTripulacion();
         
         if(despegue)
         {
